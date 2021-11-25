@@ -1,0 +1,29 @@
+Source: python-gnupg
+Maintainer: Elena Grandi <valhalla@debian.org>
+Uploaders: Debian Python Team <team+python@tracker.debian.org>
+Section: python
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13),
+ python3-all (>= 3.1.2-7~),
+ python3-setuptools,
+ dh-python,
+ gnupg,
+ 2to3
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-python
+Homepage: https://docs.red-dove.com/python-gnupg/
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-gnupg.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-gnupg
+
+Package: python3-gnupg
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${python3:Depends}, gnupg
+Description: Python wrapper for the GNU Privacy Guard (Python 3.x)
+ Python-GnuPG allows easy and well-documented access to basic GnuPG
+ functionality such as generating and managing keys, encrypting and
+ decrypting data, signing and verifying messages.
+ .
+ This package provides Python 3.x version of python-gnupg.

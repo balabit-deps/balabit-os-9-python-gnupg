@@ -1,0 +1,249 @@
+python-gnupg (0.4.8-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Elena Grandi <valhalla@debian.org>  Thu, 25 Nov 2021 16:50:12 +0100
+
+python-gnupg (0.4.7-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+
+  [ Elena Grandi ]
+  * New upstream release. Closes: #971404.
+  * Updated watch file format version (no changes needed).
+  * Bump Standards-Version to 4.6.0 (no changes needed).
+  * Bump compat to 13
+
+ -- Elena Grandi <valhalla@debian.org>  Tue, 09 Nov 2021 08:02:20 +0100
+
+python-gnupg (0.4.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.5.0 (no changes needed).
+  * Added autopkgtest-pkg-python.
+
+ -- Elena Grandi <valhalla@debian.org>  Wed, 22 Apr 2020 21:27:35 +0200
+
+python-gnupg (0.4.5-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Elena Grandi ]
+  * Remove python2 version; Closes: #937794
+  * Bump compat to 12
+
+  [ Sandro Tosi ]
+  * debian/patches/make-tests-more-verbose.patch
+    - make tests a bit more verbose, initial patch by Matthias Klose;
+      Closes: #946897
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 30 Dec 2019 18:23:06 -0500
+
+python-gnupg (0.4.5-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Elena Grandi ]
+  * New upstream release
+
+ -- Elena Grandi <valhalla@debian.org>  Sat, 17 Aug 2019 17:47:14 +0200
+
+python-gnupg (0.4.4-1) unstable; urgency=medium
+
+  * Mark all packages Multi-Arch: foreign (closes: #918799).
+  * New upstream release
+  * Updated Standards-Version to 4.3.0 (no changes needed)
+
+ -- Elena Grandi <valhalla@debian.org>  Sat, 26 Jan 2019 10:47:25 +0100
+
+python-gnupg (0.4.3-2) unstable; urgency=medium
+
+  * Backport fix for fingerprint collisions. (Closes: #913004, #850751)
+  * Updated Standards-Version to 4.2.1 (no changes needed)
+  * Added Upstream MEtadata GAthered with YAml.
+
+ -- Elena Grandi <valhalla@debian.org>  Sat, 24 Nov 2018 18:16:17 +0100
+
+python-gnupg (0.4.3-1) unstable; urgency=medium
+
+  [ Elena Grandi ]
+  * New upstream release
+    - CVE-2018-12020 mitigation: Added --no-verbose to the gpg command line,
+      in case verbose is specified in gpg.conf
+  * Updated homepage
+  * Updated Standards-Version to 4.1.4 (no additional changes needed)
+  * Updated Maintainer email
+  * Refresh patches after git-dpm to gbp pq conversion
+
+  [ Ondřej Nový ]
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+
+ -- Elena Grandi <valhalla@debian.org>  Sat, 16 Jun 2018 10:06:36 +0200
+
+python-gnupg (0.4.1-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/watch: Use https protocol
+
+  [ Elena Grandi ]
+  * Add explicit dependency on 2to3. (Closes: #889903)
+  * Update compat to 11
+  * Updated Standards-Version to 4.1.3 (no additional changes needed)
+
+ -- Elena Grandi <valhalla-d@trueelena.org>  Sat, 24 Feb 2018 15:39:45 +0100
+
+python-gnupg (0.4.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Go back to using gpg (gnupg2) at build time and as default.
+
+ -- Elena Grandi <valhalla-d@trueelena.org>  Fri, 08 Sep 2017 21:20:09 +0200
+
+python-gnupg (0.3.9-1) unstable; urgency=medium
+
+  * Removed patches merged upstream.
+  * New upstream release.
+
+ -- Elena Grandi <valhalla-d@trueelena.org>  Fri, 21 Oct 2016 15:23:17 +0200
+
+python-gnupg (0.3.8-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Elena Grandi ]
+  * Force using gpg1 at build time
+  * Default on gpg1
+  * Updated standard version to 3.9.8 (no changes needed)
+  * Add explicit build-dependency on gnupg1 (Closes: #834600)
+
+ -- Elena Grandi <valhalla-d@trueelena.org>  Wed, 17 Aug 2016 19:48:02 +0200
+
+python-gnupg (0.3.8-2) unstable; urgency=medium
+
+  [Andreas Noteng <andreas@noteng.no>]
+  * Subkey fingerprints are no longer incorrectly captured (Closes: #802967)
+
+ -- Elena Grandi <valhalla-d@trueelena.org>  Sun, 29 Nov 2015 14:50:12 +0100
+
+python-gnupg (0.3.8-1) unstable; urgency=medium
+
+  [ Elena Grandi ]
+  * New upstream release
+  * tarball signature manually checked from
+    https://pypi.python.org/pypi/python-gnupg/0.3.8
+  * Updated compat to 9
+
+  [ DPMT ]
+  * Update Vcs fields for git migration
+
+ -- Elena Grandi <valhalla-d@trueelena.org>  Tue, 13 Oct 2015 10:30:35 +0200
+
+python-gnupg (0.3.7-2) unstable; urgency=medium
+
+  * Upload to sid of new upstream release.
+  * Converted to pybuild.
+
+ -- Elena Grandi <valhalla-d@trueelena.org>  Sun, 03 May 2015 10:12:30 +0200
+
+python-gnupg (0.3.7-1) experimental; urgency=medium
+
+  * New upstream release. Closes: #774770.
+  * Skipped one test that is failing because of missing files.
+  * Updated watch file to use http://pypi.debian.net and check gpg signature.
+  * Fixed short name of the BSD-3-clause license in debian/copyright.
+  * Updated standard versions to 3.9.6 (no change needed).
+  * Fixed capitalization in description.
+
+ -- Elena Grandi <valhalla-d@trueelena.org>  Thu, 05 Feb 2015 11:36:16 +0100
+
+python-gnupg (0.3.6-1) unstable; urgency=high
+
+  * New upstream release. Closes: #738509, #736496.
+  * CVE-2014-1928 (Erroneous insertion of a \ character) fixed upstream
+  * CVE-2014-1927 (Erroneous assumptions about the usability of " characters)
+    fixed upstream
+  * CVE-2013-7323 (Unrestricted use of unquoted strings in a shell)
+    fixed upstream
+  * Updated watch file for new download source (pypi).
+  * Updated standard versions to 3.9.5 (no change needed).
+  * Removed use_quick_random_for_gnupg_1.patch (applied upstream).
+  * Updated project homepage
+
+ -- Elena Grandi <elena.valhalla@gmail.com>  Thu, 06 Feb 2014 09:52:10 +0100
+
+python-gnupg (0.3.5-2) unstable; urgency=low
+
+  [ Dmitry Shachnev ]
+  * Skip more tests that require network connection. Closes: #721965.
+
+  [ Elena Grandi ]
+  * Discard http(s) traffic to catch early further similar problems.
+
+ -- Elena Grandi <elena.valhalla@gmail.com>  Sun, 15 Sep 2013 11:36:49 +0200
+
+python-gnupg (0.3.5-1) unstable; urgency=low
+
+  * New upstream release. Closes: #721296, #721294.
+  * Updated standard versions to 3.9.4 (no change needed).
+  * Reverted simplification of --quick-random workaround.
+  * Adding --quick-random instead of --debug-quick-random for
+    gnupg < 2.
+
+ -- Elena Grandi <elena.valhalla@gmail.com>  Sat, 31 Aug 2013 09:10:31 +0200
+
+python-gnupg (0.3.4-1) unstable; urgency=low
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+  [ Elena Grandi ]
+  * New upstream release. Closes: #695796
+  * Removed testsuite patches (merged upstream).
+  * Simplified --quick-random workaround thanks to partial upstream
+    fixes. https://code.google.com/p/python-gnupg/issues/detail?id=61
+
+ -- Elena Grandi <elena.valhalla@gmail.com>  Thu, 06 Jun 2013 09:03:28 +0200
+
+python-gnupg (0.3.0-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Work around test suite hangs by adding --quick-random when generating
+    keys. Closes: #682648
+
+ -- Helmut Grohne <helmut@subdivi.de>  Mon, 22 Oct 2012 23:30:19 +0200
+
+python-gnupg (0.3.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Patched testsuite to return nonzero on failure. Closes: #671259
+
+ -- Elena Grandi <elena.valhalla@gmail.com>  Thu, 17 May 2012 09:18:35 +0000
+
+python-gnupg (0.2.9-2) unstable; urgency=low
+
+  * Honour DEB_BUILD_OPTIONS=nocheck Closes: 670975
+
+ -- Elena Grandi <elena.valhalla@gmail.com>  Tue, 01 May 2012 16:16:46 +0000
+
+python-gnupg (0.2.9-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Elena Grandi <elena.valhalla@gmail.com>  Thu, 19 Apr 2012 12:13:20 +0000
+
+python-gnupg (0.2.8-1) unstable; urgency=low
+
+  * Initial release. Closes: 660842
+
+ -- Elena Grandi <elena.valhalla@gmail.com>  Tue, 27 Mar 2012 14:17:48 +0000

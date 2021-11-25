@@ -1,0 +1,22 @@
+From: Elena Grandi <valhalla@debian.org>
+Date: Tue, 9 Nov 2021 07:20:20 +0100
+Subject: Make tests more verbose
+Forwarded: not-needed
+
+---
+ test_gnupg.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/test_gnupg.py b/test_gnupg.py
+index bd7adae..c221efc 100644
+--- a/test_gnupg.py
++++ b/test_gnupg.py
+@@ -1176,7 +1176,7 @@ def main():
+     init_logging()
+     logger.debug('Python version: %s', sys.version.replace('\n', ' '))
+     tests = suite()
+-    results = unittest.TextTestRunner(verbosity=1).run(tests)
++    results = unittest.TextTestRunner(verbosity=2).run(tests)
+     failed = not results.wasSuccessful()
+     if failed and 'TOXENV' in os.environ and os.name != 'posix':
+         os.system('type test_gnupg.log')
